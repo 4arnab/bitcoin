@@ -17,6 +17,18 @@ function CoinCard({ coin }) {
         {coin.price_change_percentage_24h.toFixed(5)} %
       </p>
       <p>Market Cap: {coin.market_cap.toLocaleString()}</p>
+      <p>
+        Total Volume:
+        <strong> {coin.total_volume.toLocaleString()}</strong>
+      </p>
+      <p>
+        Low 24:
+        <strong> {coin.low_24h}</strong>
+      </p>
+      <p>
+        Last Updated:
+        <strong> {new Date(coin.last_updated).toDateString()}</strong>
+      </p>
     </div>
   );
 }
