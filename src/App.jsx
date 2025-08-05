@@ -60,9 +60,9 @@ function App() {
         />
         <Route path="/coin/:id" element={<CoinPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Footer />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }
